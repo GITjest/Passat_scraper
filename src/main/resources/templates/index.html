@@ -12,7 +12,10 @@
     <script type="text/javascript" src="js/ajaxPost.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $("input[type=date]").prop("max", new Date().toISOString().split("T")[0])
+            var date = new Date();
+            $("input[type=date]").prop("max", date.toISOString().split("T")[0])
+            date.setDate(date.getDate() + 1);
+            $("#endDate").prop("max", date.toISOString().split("T")[0])
 
             $("#searchConfigForm").submit(function(event) {
                 event.preventDefault();
