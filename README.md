@@ -15,6 +15,7 @@
 * Spring-data-jpa - 2.4.2
 * Spring-validation - 2.4.2
 * Thymeleaf - 3.0.12
+* Hibernate - 5.4.27
 * Bootstrap - 4.4.1
 * JQuery - 3.5.1
 * Maven
